@@ -1,0 +1,28 @@
+select(Element, List, RestList)
+
+Element: リストから選択（削除）する要素。
+List: 元のリスト。
+RestList: 選択された要素を除いた残りのリスト。
+
+
+findall(+Template, :Goal, -Bag)
+
+Template: 収集したい項の形式。
+Goal: 解を見つけるための条件。
+Bag: 解をリストとして格納する変数。
+
+member(N,List)
+リストの要素を1つずつ取り出すための処理
+
+append
+
+\+ 否定
+
+
+findall((Day, Member), 
+        (
+            all_members(Members), member(Member, Members),
+            all_target_days(Days), member(Day, Days),
+            valid_assignment(Member, Day, 'Cleaning')
+        )
+    , Combinations).
