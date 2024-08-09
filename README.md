@@ -36,3 +36,9 @@ CREATE TABLE users
 (id INT NOT NULL AUTO_INCREMENT, name TEXT, PRIMARY KEY (id));
 
 INSERT INTO users (name) VALUES ('staff1');
+
+{"calendarList":null,"dutyList":null,"dutyFloorList":null,"staffList":[{"staffCd":
+"00001"
+,"postRank":
+""
+}],"constraintList":null,"staffDutyList":null,"pastScheduleList":null,"targetScheduleList":null}
